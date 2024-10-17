@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow and text shadow </title>
+    <style>
+
+    .container{
+        display:flex;
+    }
+    .card{
+        background-color: yellowgreen;
+        margin: 23px 12px;
+        padding:23px 12px;
+        border: 2px solid black ;
+/* shorthand for box-shadow */
+    /*box-shadow: offset-x offset-y blur-radius spread-radius  */
+        /* box-shadow: 10px 13px black; */
+        /* box-shadow: -10px -13px black ; */
+        /* box-shadow: 10px 12px 7px black; */
+        /* box-shadow:7px 10px 12px 30px black ; */
+         /* box-shadow:7px 10px 12px 30px rgba(71, 171,171, 0.5) ; */
+         /* box-shadow: inset 3px 5px black; */
+         box-shadow: 3px 5px blue, 5px 8px black;
+
+
+    }
+
+    .card h1{
+        text-shadow: 2px 2px white;
+    }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h1>card-1</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Sed sequi quam quos aliquam fugiat iste dolore
+                dolores unde? Minus necessitatibus possimus
+                 incidunt ex in sit ea molestiae voluptatum quasi neque.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h1>card-2</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed sequi quam quos aliquam fugiat iste dolore
+                dolores unde? Minus necessitatibus possimus incidunt ex in sit ea molestiae voluptatum quasi neque.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h1>card-3</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed sequi quam quos aliquam fugiat iste dolore
+                dolores unde? Minus necessitatibus possimus incidunt ex in sit ea molestiae voluptatum quasi neque.</p>
+        </div>
+    </div>
+</body>
+
+</html>

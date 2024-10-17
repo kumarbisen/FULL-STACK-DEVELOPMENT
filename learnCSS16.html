@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on selector </title>
+    <style>
+        h1{
+            background-color: green;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+/* for all para who is inside div or div inside div inside para */
+    /* div p{
+        background-color: green;
+        color: rgb(163, 44, 44);
+        font-weight: bold;
+    } */
+/* if p is contained by any li which is contained by div */
+    /* div li p{
+        color:rgb(163, 44, 44); 
+        background-color: cyan;
+        font-weight: bold;
+
+    } */
+ /* if p is right inside div then this css will applied */
+        /* div > p{
+            color: rgb(163, 44, 44);
+            background-color: burlywood;
+            font-weight: bold--;
+
+        } */
+/* if p is right after div i.e p is the next sibling of div */
+        /* div + p {
+            color: aliceblue;
+            background-color: green;
+            font-weight: bold;
+        } */
+    </style>
+</head>
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="contanier">
+    <div class="row">
+        <ul>
+            <li class="item">
+                <p>This is another paragarph inside li</p>
+            </li>
+            <li>This will not get affected</li>
+            <p>This is para inside ul</p>
+        </ul>
+        <p>This is a paragarph</p>
+    </div>
+    <p>This is a another paragraph</p>
+</div>
+<p>This is outermost paragraph</p>
+    
+</body>
+</html>
