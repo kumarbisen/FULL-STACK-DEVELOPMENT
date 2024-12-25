@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+  <!-- flexbox is a one dimensional layout method for 
+      laying out items in rows or coloumns  -->
+  <!-- CSS flexbox is better way to align items into a container -->
+<style>
+  .container{
+    border: 2px solid black;
+    height: 544px;
+    width: 100%;
+    /* initialize the container with flex box */
+    display: flex ;
+    /* flex properties for flex container */
+     flex-direction:row;  /*(defult) */
+    /* flex-direction: column;
+    flex-direction: row-reverse;
+    flex-direction: column-reverse; */
+     flex-wrap: wrap;
+
+     /* set both flex direction and flex wrap */
+     /* flex-flow: row-reverse wrap; */
+
+     justify-content: center;
+     justify-content: space-between;
+     /* justify-content: space-evenly;
+     justify-content: space-around; */
+
+     /* to align items */
+
+     align-items: center;
+     align-items: flex-end;
+     align-items: flex-start;
+     align-items: stretch;
+  
+  }
+  .item{
+    width: 200px;
+    height:200px;
+    background-color: tomato;
+    border: green;
+    margin: 10px;
+    padding: 4px;
+  }
+</style>
+</head>
+
+<body>
+  <h1>This is flexbox tutorial</h1>
+  <div class="container">
+    <div class="item" id="item-1">Box-1</div>
+    <div class="item" id="item-2">Box-2</div>
+    <div class="item" id="item-3">Box-3</div>
+    <div class="item" id="item-4">Box-4</div>
+    <div class="item" id="item-5">Box-5</div>
+
+  </div>
+</body>
+</html>

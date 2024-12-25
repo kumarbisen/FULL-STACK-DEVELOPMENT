@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Listning</title>
+    <style>
+        #btn{
+            background-color:red;
+            border: 2px solid black;
+            padding: 10px 20px;
+            border-radius: 8px;
+            color: white;
+            font-weight: lighter;
+            box-shadow: 2px 4px black;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Browser events:
+     onclick, contextmenu, 
+     mouseover/mouseout,
+     mousedown/mouseup,
+     mousemove,
+     submit,
+     focus,
+     DOMContentLoaded,
+     transitioned etc. -->
+
+    <div class="container">
+        <h1>Learn About Events
+        </h1>
+        <h3 id="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quibusdam deserunt omnis, iure, inventore
+            totam fugiat sapiente enim maiores doloremque minima, nisi hic praesentium? Modi, hic ipsam dolorum
+            consequuntur repudiandae tenetur blanditiis nesciunt esse molestiae, magni eaque praesentium voluptates.
+            Culpa.
+        </h3>
+    </div>
+    <button id="btn" onclick="toggle()">Show / Hide </button>
+
+    <script>
+        let para=  document.getElementById('para');
+        para.addEventListener('mouseover', function run() {
+            console.log('mouse inside');
+            
+        });
+        para.addEventListener('mouseout', function run(){
+            console.log('mouse out')
+        });
+
+
+        function toggle() {
+            // let btn = document.getElementById('btn')
+            // let para = document.getElementById('para')
+            if (para.style.display != 'none'){
+                para.style.display = 'none'
+
+            }else{
+                para.style.display = "block"
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String in JavaScript</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="content"></div>
+        <h1>String in JavaScript</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum perspiciatis architecto adipisci itaque
+            laborum debitis maiores? Voluptate provident, accusamus dolorum magni blanditiis dignissimos soluta aperiam
+            reiciendis deleniti odit voluptates nisi quo quia. Sit molestias corrupti expedita maiores quos recusandae
+            magnam.</p>
+    </div>
+
+    <script>
+        var string = "this "
+        var name = "Vivek"
+        var channel = "CodeWithBisen"
+        var message = "vivek is a good boy "
+        // console.log(string+name +message)
+        var temp  = `${name} is a nice person and he has a channel called ${channel}`;
+        // console.log(temp)
+        var len = name.length;
+        // console.log(`length of the name is ${len}`)
+        // console.log("Hello \n world \t vivek\b javascript")
+        var y = new String("This")
+        console.log(y)
+        // fill data in Html dynamically from javascript
+        document.getElementById('content').innerHTML = '<h3> this a Aman heading</h3>'
+
+
+        var str = "This is a string";
+        console.log(str);
+        // First occurence of a substring
+        var position = str.indexOf('is');
+        console.log(position)
+        // Last occurence of a substring
+        position = str.lastIndexOf('is')
+        console.log(position)
+
+        // Substring from a string 
+        // var substr = str.slice(1,7);
+        // var substr = str.substring(1,7);
+        var substr1= str.substr(1,3);
+        console.log(substr1)
+
+        // Replaced string
+        var replaced = str.replace('string', 'aman')
+        console.log(replaced)
+        console.log(str)
+
+        // console.log(str.toUpperCase());
+        // console.log(str.toLowerCase());
+        // var newString = str.concat('New String')
+        // console.log(newString)
+        // var strWhitespaces = "            this contains           whitespaces       "
+        // console.log(strWhitespaces)
+        // console.log(strWhitespaces.trim());
+
+        // var char = str.charAt(2)
+        // var char = str.charCodeAt(2); // not very important 
+        console.log(char)
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
