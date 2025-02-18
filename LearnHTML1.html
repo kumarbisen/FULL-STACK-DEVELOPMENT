@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML form</title>
+</head>
+<body>
+    
+    
+    <!--this is html form-->
+    <h5>This is HTML Form</h5>
+    <form action="backend.php">
+
+        <div>
+            Name: <input type="text" name="mytext">
+        </div>
+        <br>
+        <div>
+            Role: <input type="text" name="myrole">
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="mydate">
+        </div>
+        <br>
+
+        <div>
+            Gender: Male <input type="radio" name="mygender">Female: <input type="radio" name="mygender"> others :
+            <input type="radio" name="mygender">
+        </div>
+        <br>
+        <label for="myeligibility">check for eligibility</label>
+        <div>
+            <input type="checkbox" name="eligiblity" id="myeligibility">
+        </div>
+        <br>
+        <div>
+            Write about Yourself : <textarea name="mytext" cols="30" rows="10"></textarea>>
+        </div>
+        <div>
+            <input type="submit" value="Submit now">
+            <input type="reset" value="reset now">
+        </div>
+    </form>
+</body>
+</html>

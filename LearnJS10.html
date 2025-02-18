@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeout, ClearTimeout & Setinterval & date and time</title>
+</head>
+<body>
+
+    <div class="container">
+        Time now is <span id="time"></span>    
+    </div>
+    <script>    
+    console.log('This is a javascript');
+    // setTimeout : Allows us to run funtions once after the interval of time 
+    // clearTimeout : Allows us to run the function repeatedly after the interval of time 
+
+    function greet(name, ByeText) {
+        console.log("Hello Good Morning "+ name +" "+ByeText );
+    }
+    // timeout = setTimeout(greet, 5000, "vivek " ,"Takecare");
+    // console.log(timeout);
+    // clearTimeout(timeout);
+
+    // setTimeout(greet(), 12000)--> Wrong way to calling the function inside setTimeout
+
+
+    // IntervalId =  setInterval(greet, 1000, "vivek", "Good Night")
+    // clearInterval(IntervalId);
+
+    // function displayTime() {
+    //     time = new Date();
+    //     console.log(time);
+    //     document.getElementById('time').innerHTML = time;
+        
+        
+        
+    // }
+    // setInterval(displayTime,1000);
+
+    // let newDate = new Date(year , month , hours, seconds, milliseconds );
+     let newDate = new Date(3020,4,23,3,1000);
+     console.log(newDate);
+
+     let yr = newDate.getFullYear();
+     console.log("This year is ", yr)
+    //  you can also get & set years ,months, hours, milliseconds etc.
+
+    newDate.setHours(12)
+    console.log(newDate);
+     
+    
+
+    </script>
+    
+</body>
+</html>

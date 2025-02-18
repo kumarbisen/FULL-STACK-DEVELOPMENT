@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid#2</title>
+    <style>
+        .container{
+            display: grid;
+            /* grid-template-columns: 1fr 2fr 122px; */
+            /* grid-template-rows: 1fr 12px 3px ; */
+            /* grid-auto-rows: 2fr;
+            grid-auto-columns: 2fr; */
+            grid-template-columns: repeat(4, 2fr);
+            grid-gap: 1rem;
+        }
+
+        .box{
+            background-color: rebeccapurple;
+            border: 2px solid black;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">This is box-1</div>
+        <div class="box">This is box-2</div>
+        <div class="box">This is box-3</div>
+        <div class="box">This is box-4</div>
+        <div class="box">This is box-1</div>
+        <div class="box">This is box-2</div>
+        <div class="box">This is box-3</div>
+        <div class="box">This is box-4</div>
+        <div class="box">This is box-1</div>
+        <div class="box">This is box-2</div>
+        <div class="box">This is box-3</div>
+        <div class="box">This is box-4</div>
+    </div>
+</body>
+</html>
